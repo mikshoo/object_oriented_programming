@@ -31,4 +31,10 @@ student = Student.new ("Christina")
 instructor.greeting 
 student.greeting
 
+instructor.teach
+student.learn
+
+student.teach # When student.teach is called this error shows up. 
+			#undefined method `teach' for #<Student:0x007fc57b245778 @name="Christina"> (NoMethodError)
+			#This error shows up because "teach" is not defined in the "student" method
 
